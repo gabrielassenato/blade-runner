@@ -1,0 +1,63 @@
+.elenco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    h2 {
+        padding-top: 150px;
+        padding-bottom: 40px;
+        font-family: bladeRunner;
+        text-align: center;
+        font-size: 5em;
+        color: #fff;
+
+        @media (max-width: 768px) {
+            padding-top: 100px;
+            font-size: 3em;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            text-align: center;
+            justify-content: space-between;
+            
+            picture {
+
+                img {
+                    border-radius: 50%;
+                    height: 350px;
+                    width: 350px;
+                    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.527);
+                    position: relative;
+                    overflow: hidden;
+                    object-fit: cover;
+                }
+            }
+
+            h3 {
+                font-size: 28px;
+                padding-top: 12px;
+                padding-bottom: 16px;
+            }
+
+            p {
+                padding: 0px 35px 40px;
+                font-size: 18px;
+
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

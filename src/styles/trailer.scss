@@ -1,0 +1,24 @@
+.trailer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+    
+    h2 {
+        padding-top: 150px;
+        padding-bottom: 40px;
+        font-family: bladeRunner;
+        text-align: center;
+        font-size: 5em;
+        color: #fff;
+    }
+
+    iframe {
+        width: 70vw;
+        height: 70vh;
+    }
+}

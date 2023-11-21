@@ -1,0 +1,62 @@
+.header {
+    position: relative;
+
+    &__nav {
+        background: linear-gradient(to bottom, #000 44%, transparent 70%);
+        height: 180px;
+        padding-top: 20px;
+        position: fixed;
+        top: 0;
+        left: 0; 
+        right: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        height: 70px;
+        padding-left: 15px;
+    }
+
+    &__links {
+        display: flex;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-top: 10px;
+
+        @media (max-width: 768px) {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 88px;
+            width: 100%;
+            background: #000000b0;
+            z-index: 1;
+            text-align: center;
+        }
+    
+        &.active {
+            display: flex;
+        }
+    
+        &__item {
+            margin-left: 10px;
+            margin-right: 10px;
+            
+            a {
+                color: white;
+                text-decoration: none;
+
+                @media (max-width: 768px) {
+                    display: block;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        padding-right: 15px;
+    }
+}
